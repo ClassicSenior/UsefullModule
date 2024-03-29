@@ -1,6 +1,6 @@
 local usefullmodule = {}
 
-function usefullmodule:ffsetForward()
+function usefullmodule:ffsetForward(args, speaker)
     local character = game.Players.LocalPlayer.Character
     local forwardVector = workspace.CurrentCamera.CFrame.lookVector
     local newPosition = character.HumanoidRootPart.Position + (forwardVector * args[1])
