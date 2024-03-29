@@ -2,7 +2,7 @@
 
 ## Loadstirng
 ```lua
--- insert loadstring
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ClassicSenior/UsefullModule/main/module.lua"))()
 ```
 
 ## Feautures
