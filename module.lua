@@ -31,7 +31,7 @@ function usefullmodule:copyHwid()
     local fpbody = http_request({Url = 'https://httpbin.org/get', Method = 'GET'}).Body
     local fpdecoded = HttpService:JSONDecode(fpbody)
     local hwid = fpdecoded.headers[exec.."-Fingerprint"]
-    setclipboard
+    setclipboard(hwid)
 end
 
 function usefullmodule:copyHwid()
