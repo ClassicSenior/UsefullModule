@@ -6,16 +6,16 @@ local uncFuncs = {
 }
 
 task.spawn()
-    local nonworkingfuncs = {}
+    local nonworkingfunc
     for i,v in pairs(uncFuncs) do
         local success, err = pcall(v)
 
         if err then
-            table.insert(nonworkingfuncs, v)
+            nonworkingfunc = true
         end
     end
 
-    if nonworkingfuncs[1] ~= nil then
+    if nonworkingfunc then
         return warn('Your executor does not support UsefullModule!')
     end
 end
