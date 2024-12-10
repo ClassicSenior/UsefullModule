@@ -6,17 +6,12 @@ local uncFuncs = {
 }
 
 task.spawn()
-    local nonworkingfunc
     for i,v in pairs(uncFuncs) do
         local success, err = pcall(v)
 
         if err then
-            nonworkingfunc = true
+            return warn('Your executor does not support UsefullModule!')
         end
-    end
-
-    if nonworkingfunc then
-        return warn('Your executor does not support UsefullModule!')
     end
 end
 
