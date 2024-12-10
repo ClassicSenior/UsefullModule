@@ -5,14 +5,14 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ClassicSenior/UsefullModule/main/module.lua"))()
 ```
 
-## Feautures
-### Offset Forward
+# Feautures
+## Offset Forward
 ```lua
 usefullmodules:offsetForward(studs)
 ```
 > Returns Object: nil
 
-### Copy HWID
+## Copy HWID
 ```lua
 usefullmodules::copyhwid()
 ```
