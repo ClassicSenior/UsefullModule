@@ -2,7 +2,7 @@ local usefullmodule = {}
 usefullmodule.__index = function() end
 
 local uncFuncs = {
-    setclipboard()
+    setclipboard(' ')
 }
 
 task.spawn()
@@ -32,10 +32,6 @@ function usefullmodule:copyHwid()
     local fpdecoded = HttpService:JSONDecode(fpbody)
     local hwid = fpdecoded.headers[exec.."-Fingerprint"]
     setclipboard(hwid)
-end
-
-function usefullmodule:copyHwid()
-
 end
 
 return usefullmodule
