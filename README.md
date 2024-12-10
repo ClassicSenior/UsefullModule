@@ -14,6 +14,6 @@ usefullmodules:offsetForward(studs)
 
 ## Copy HWID
 ```lua
-usefullmodules::copyhwid()
+usefullmodules:copyHwid()
 ```
 > Returns String
